@@ -78,3 +78,4 @@ C:\Users\310-01\Desktop\0808_asp\slnOrder\prjOrder\bin\zh-Hant\EntityFramework.r
 C:\Users\310-01\Desktop\0808_asp\slnOrder\prjOrder\bin\roslyn\Microsoft.Managed.Core.targets
 C:\Users\310-01\Desktop\0808_asp\slnOrder\prjOrder\bin\roslyn\System.IO.Pipes.AccessControl.dll
 C:\Users\310-01\Desktop\0808_asp\slnOrder\prjOrder\bin\zh-Hant\EntityFramework.SqlServer.resources.dll
+C:\Users\310-01\Desktop\0808_asp\slnOrder\prjOrder\obj\Debug\prjOrder.csprojAssemblyReference.cache

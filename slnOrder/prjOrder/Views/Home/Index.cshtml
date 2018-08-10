@@ -1,0 +1,61 @@
+﻿@model IEnumerable<prjOrder.Models.tOrder>
+
+@{
+    ViewBag.Title = "訂單管理";
+}
+
+<h2>訂單管理</h2>
+
+<p>
+    @Html.ActionLink("新增", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            訂單編號
+        </th>
+        <th>
+            訂單內容
+        </th>
+        <th>
+            訂單日期
+        </th>
+        <th>
+            訂單狀態
+        </th>
+        <th>
+            訂單金額
+        </th>
+        <th>
+            備註
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.order_no)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.order_content)
+        </td>
+        <td>
+            @DateTime.Parse(item.order_date.ToString()).ToShortDateString()
+        <td>
+            @Html.DisplayFor(modelItem => item.order_status)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.order_money)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.remark)
+        </td>
+        <td>
+            @Html.ActionLink("修改", "Edit", new { id = item.Id }) |
+            @Html.ActionLink("刪除", "Delete", new { id = item.Id }, new { onclick = "return confirm('確定要刪除嗎?')" })
+        </td>
+    </tr>
+}
+
+</table>
